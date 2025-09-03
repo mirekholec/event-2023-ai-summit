@@ -53,7 +53,7 @@ while (true)
 
         messages.Add(new ChatMessage(ChatMessageRole.Assistant, sb.ToString()));
     }
-    catch (System.Security.Authentication.AuthenticationException e)
+    catch (System.Security.Authentication.AuthenticationException)
     {
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine($"Autentizační údaje k API nejsou správné.");
